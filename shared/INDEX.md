@@ -8,11 +8,11 @@
 | 需要处理的内容 | 唯一维护文件 | 常用位置 |
 | --- | --- | --- |
 | 任务、内容判断、取舍、授权与完成 | [决策契约](core.md) | CORE-01～CORE-05 |
-| 角度、素材、细节与展开分量 | [内容](standards/content.md) | CONTENT-01～CONTENT-05 |
-| 先后关系、段落职责、篇幅与形式 | [组织](standards/organization.md) | ORG-01～ORG-05 |
-| 成文与语言审核中的句段表达 | [语言](standards/prose.md) | PROSE-01～PROSE-08 |
+| 角度、素材、细节、解释中间层与数据意义 | [内容](standards/content.md) | CONTENT-01～CONTENT-07 |
+| 先后关系、段落职责、篇幅、标题与内容分配 | [组织](standards/organization.md) | ORG-01～ORG-07 |
+| 成文与语言审核、直接禁止表演性表达 | [语言](standards/prose.md) | PROSE-01～PROSE-12 |
 | 依据、因果、比较、结论与求解程度 | [推理](standards/reasoning.md) | LOGIC-01～LOGIC-05 |
-| 作者、人物、视角、语域与立场归属 | [声音](standards/voice.md) | VOICE-01～VOICE-05 |
+| 作者、人物、视角、口头与正式语域 | [声音](standards/voice.md) | VOICE-01～VOICE-07 |
 | 材料范围、事实、引用与来源关系 | [来源](standards/sources.md) | SRC-01～SRC-05 |
 | 读取、研究、统计与定位编辑 | [工具](tooling/capabilities.md) | TOOL-01～TOOL-04 |
 | 完整读取、当前稿、恢复与交接 | [上下文](protocols/context.md) | CTX-01～CTX-04 |
@@ -24,7 +24,10 @@
 
 | 当前待判断事项 | 对应内容 |
 | --- | --- |
-| “有思考”应展开什么 | [内容重心](standards/content.md#content-01)、[内容分量](standards/content.md#content-04)、[理由与结论](standards/reasoning.md#logic-02) |
+| “有思考”应展开什么 | [内容重心](standards/content.md#content-01)、[解释中间层](standards/content.md#content-06)、[理由与结论](standards/reasoning.md#logic-02) |
+| 术语、数字与结论只是罗列 | [解释中间层](standards/content.md#content-06)、[术语和数据](standards/content.md#content-07) |
+| 演讲是否适合听众、论文风格是否准确 | [口头表达](standards/voice.md#voice-06)、[正式表达](standards/voice.md#voice-07) |
+| 表演性幽默、口语、引号、标题钩子 | [直接禁令](standards/prose.md#prose-09)、[标题禁令](standards/organization.md#org-06) |
 | 长度来自重复还是必要关系拥挤 | [段落职责](standards/organization.md#org-02)、[长度](standards/organization.md#org-05)、[句间承接](standards/prose.md#prose-03) |
 | 一种语言形式在这里有什么作用 | [修辞](standards/prose.md#prose-06)、[功能](standards/prose.md#prose-08)、[声音](standards/voice.md#voice-02) |
 | 改写是否改变了作者责任或判断强度 | [真实作者](standards/voice.md#voice-04)、[范围与强度](standards/reasoning.md#logic-03)、[归属](standards/sources.md#src-03) |

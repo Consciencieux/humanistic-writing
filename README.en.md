@@ -10,9 +10,15 @@ Start with [the coordinator](SKILL.md). [Guide](skills/humanistic-writing-guide/
 
 Revision uses the latest designated draft as its baseline. Guide decides what needs to change, creates replacement passages, and retains untouched text from the baseline. Audit applies strict semantic prohibitions to confirmed failures and passes located repair needs back to Guide when revision is authorized.
 
+## Concrete guidance and hard prohibitions
+
+The decision contract governs why content is written or edited, where changes belong, and when to stop. In ordinary nonfiction, explanatory, and formal presentations, the shared prose standard directly forbids performative banter, fake audience interaction, decorative jokes and analogies, slogan-like punchlines, ornamental quotation marks, and fabricated contrasts. The organization standard forbids bulk-generated headline hooks. These are prohibited behaviors, not frequency quotas or individual banned words.
+
+Guide adds positive methods for [substantive explanation](skills/humanistic-writing-guide/references/explain.md) and [audience/register choices](skills/humanistic-writing-guide/references/registers.md), including accessible spoken delivery and accurate academic prose. Audit enforces confirmed violations through its [prohibitions](skills/humanistic-writing-audit/references/prohibitions.md) while protecting legitimate source quotations and explicitly commissioned creative work.
+
 ## Responsibilities and loading
 
-`shared/core.md` owns the decision contract: intended outcome, content before technique, context-sensitive choice, bounded change, and completion. Guide owns composition, revision and transformation methods. Audit owns review methods and governance prohibitions. Shared standards cover content, organization, prose, reasoning, voice and sources.
+`shared/core.md` owns the decision contract: intended outcome, content before technique, context-sensitive choice, bounded change, and completion. Guide owns composition, revision, transformation, explanation and register methods. Audit owns review methods and governance prohibitions. Shared standards cover content, organization, prose, reasoning, voice and sources.
 
 Every entry starts with the core and context protocol, then loads the current role's method. Domain standards are selected as needed. Read the prose standard when composing prose or reviewing language; the shared index is optional navigation. Shared resources have no dependency on role methods.
 

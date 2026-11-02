@@ -16,15 +16,23 @@
 
 Guide 主动发展内容并选择表达方法。修订以最新原稿为基线，先确定实际变化，再替换目标区域；未改文字沿用原文。Audit 根据上下文检查确认的违规行为，交付位置、影响和修复方向。
 
+## 写作要求与具体禁令
+
+宏观治理继续以[决策契约](shared/core.md)为基础：从内容决定写法、修改幅度与停止条件。针对已发现的表演性写法，[语言标准](shared/standards/prose.md#prose-09)明确**直接禁止**主持人式串词、假互动、装饰性幽默与廉价比喻、金句、排版重音及虚构对立；[组织标准](shared/standards/organization.md#org-06)禁止批量标题钩子。不设计这些违规行为的“适量使用配方”，也不以替换同义句逃避禁令。
+
+真正需要能力建设的事项同时有正面方法：Guide 的[解释与信息展开](skills/humanistic-writing-guide/references/explain.md)负责论证中间层、术语和数据的实际含义，[语域与表达场合](skills/humanistic-writing-guide/references/registers.md)负责口头汇报、学术／正式表达和个人声音；[内容](shared/standards/content.md#content-06)、[声音](shared/standards/voice.md#voice-06)等共享标准供 Guide 与 Audit 共同判断。Audit 的[严格禁令](skills/humanistic-writing-audit/references/prohibitions.md#audit-06)对确认的违规作明确裁决。
+
+这里禁止的是实际的表演性行为；真实引文、作者已提供的文字及明确授权的戏剧或喜剧任务依其内容处理。审核不得仅凭关键词、标点数量、句长和格式相似作出违规判定。具体能力在实际适用时加载，不要求每次写作检查全部条文。
+
 ## 架构
 
 | 责任 | 位置 |
 | --- | --- |
 | 任务路由、授权与角色交接 | `SKILL.md` |
 | 内容判断、手段选择、变更与完成的共同契约 | `shared/core.md` |
-| 正面的成文、修订与转换方法 | `skills/humanistic-writing-guide/references/` |
+| 正面的成文、修订、转换、解释与语域方法 | `skills/humanistic-writing-guide/references/` |
 | 审核方法与根因治理禁令 | `skills/humanistic-writing-audit/references/` |
-| 内容、组织、语言、推理、声音、来源的领域标准 | `shared/standards/` |
+| 内容、组织、语言禁令、推理、声音、来源的领域标准 | `shared/standards/` |
 | 当前稿、资料加载与跨轮接续 | `shared/protocols/context.md` |
 | 宿主工具调用、定位编辑与差异核对 | `shared/tooling/capabilities.md` |
 
@@ -40,7 +48,7 @@ humanistic-writing/
 ├── skills/
 │   ├── humanistic-writing-guide/
 │   │   ├── SKILL.md
-│   │   └── references/        # compose / revise / transform
+│   │   └── references/        # compose / revise / transform / explain / registers
 │   └── humanistic-writing-audit/
 │       ├── SKILL.md
 │       └── references/        # review / prohibitions

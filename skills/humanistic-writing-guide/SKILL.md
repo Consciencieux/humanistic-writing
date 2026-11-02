@@ -18,7 +18,7 @@ license: MIT
 | 润色、删改、压缩扩写、重组、重写 | [修订](references/revise.md) | 最新原稿、目标区域、具体改善与保留内容 |
 | 翻译、摘要、整理、改变受众或语域 | [转换](references/transform.md)与修订 | 源文、目标用途、允许取舍的内容 |
 
-方法负责把内容判断交给实际写作。简单任务直接完成；涉及实质取舍时先选定处理方式，再生成所需句段。修订只生成替换区域，完整稿从基线组装；明确的全文重写使用全文授权。
+方法负责把内容判断交给实际写作。常规非虚构说明、论述或汇报的句段成文，直接执行[语言标准中的硬性表达禁令](../../shared/standards/prose.md#prose-09)；这些禁令不要求生成对应的替代俏皮话或金句。简单任务直接完成；涉及实质取舍时先选定处理方式，再生成所需句段。修订只生成替换区域，完整稿从基线组装；明确的全文重写使用全文授权。
 
 ## 按实际工作选择能力
 
@@ -26,6 +26,8 @@ license: MIT
 | --- | --- |
 | 选择角度、发展材料或细节 | [内容](../../shared/standards/content.md) |
 | 多段安排、重排或篇幅分配 | [组织](../../shared/standards/organization.md) |
+| 解释概念、数据、论证中间层或改善内容充实度 | [解释方法](references/explain.md)、[内容](../../shared/standards/content.md)与需要的[推理](../../shared/standards/reasoning.md) |
+| 口头汇报、学术／正式表述、个人表达或跨语域转换 | [语域方法](references/registers.md)、[声音](../../shared/standards/voice.md) |
 | 已选定内容进入成文，或修改句段表达 | [语言](../../shared/standards/prose.md) |
 | 形成理由、比较、解释或结论 | [推理](../../shared/standards/reasoning.md) |
 | 建立或保持作者、人物、语域与声音 | [声音](../../shared/standards/voice.md) |
