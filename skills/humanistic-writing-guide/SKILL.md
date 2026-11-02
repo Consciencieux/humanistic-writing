@@ -1,6 +1,6 @@
 ---
 name: humanistic-writing-guide
-description: 通用自然语言构思、成文与修订。根据材料形成内容，选择结构、声音和表达；以最新原稿实施有范围的编辑，完成起草、续写、压缩扩写、润色、翻译与整理。
+description: 通用自然语言拟题、构思、成文与修订。根据材料形成内容，选择结构、声音和表达；以最新原稿实施有范围的编辑，完成起草、续写、压缩扩写、润色、翻译与整理。
 license: MIT
 ---
 
@@ -14,6 +14,7 @@ license: MIT
 
 | 当前操作 | 方法 | 本轮工作的依据 |
 | --- | --- | --- |
+| 文章拟题、章节命名、目录调整 | [标题](references/headings.md) | 全文或本节实际内容、主要对象及必要范围 |
 | 构思、起草、续写 | [成文](references/compose.md) | 作品目的、材料、选定内容及关系 |
 | 润色、删改、压缩扩写、重组、重写 | [修订](references/revise.md) | 最新原稿、目标区域、具体改善与保留内容 |
 | 翻译、摘要、整理、改变受众或语域 | [转换](references/transform.md)与修订 | 源文、目标用途、允许取舍的内容 |
@@ -25,7 +26,7 @@ license: MIT
 | 工作 | 读取 |
 | --- | --- |
 | 选择角度、发展材料或细节 | [内容](../../shared/standards/content.md) |
-| 多段安排、重排或篇幅分配 | [组织](../../shared/standards/organization.md) |
+| 多段安排、重排、标题层级或篇幅分配 | [组织](../../shared/standards/organization.md) |
 | 解释概念、数据、论证中间层或改善内容充实度 | [解释方法](references/explain.md)、[内容](../../shared/standards/content.md)与需要的[推理](../../shared/standards/reasoning.md) |
 | 口头汇报、学术／正式表述、个人表达或跨语域转换 | [语域方法](references/registers.md)、[声音](../../shared/standards/voice.md) |
 | 已选定内容进入成文，或修改句段表达 | [语言](../../shared/standards/prose.md) |

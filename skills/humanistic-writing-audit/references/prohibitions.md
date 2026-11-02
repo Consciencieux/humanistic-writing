@@ -40,7 +40,7 @@
 <a id="audit-06"></a>
 ## AUDIT-06 严禁普通文本中的表演性修饰与伪互动
 
-常规说明、课程汇报、非虚构论述与正式发言，严格执行共享语言标准的[表演性口语与假互动](../../../shared/standards/prose.md#prose-09)、[装饰性幽默与金句](../../../shared/standards/prose.md#prose-10)、[引号与排版重音](../../../shared/standards/prose.md#prose-11)和[人为对立与批量修辞](../../../shared/standards/prose.md#prose-12)禁令，标题执行[ORG-06](../../../shared/standards/organization.md#org-06)。确认为这些行为，必须标为需要修复，不得降格为可选风格偏好。
+常规说明、课程汇报、非虚构论述与正式发言，严格执行共享语言标准的[表演性口语与假互动](../../../shared/standards/prose.md#prose-09)、[装饰性幽默与金句](../../../shared/standards/prose.md#prose-10)、[引号与排版重音](../../../shared/standards/prose.md#prose-11)和[人为对立与批量修辞](../../../shared/standards/prose.md#prose-12)禁令，标题执行[ORG-08](../../../shared/standards/organization.md#org-08)。确认为这些行为，必须标为需要修复，不得降格为可选风格偏好。
 
 审查要写明它在具体句段怎样制造表演、代替信息、破坏语域或形成批量结构；删除装饰，必要时恢复被遮挡的事实与解释。不把某个关键词、引号或比喻一出现就当作违规，不因稿件本身是引用材料就要求篡改原文。严禁给违规句式提供更俏皮、更隐蔽的替换方案。
 
@@ -50,3 +50,10 @@
 对“结构完整但空洞”“数据和术语很多但难以理解”“专业与口语机械切换”“观点只呈现态度没有依据”等问题，按照[CONTENT-06](../../../shared/standards/content.md#content-06)、[CONTENT-07](../../../shared/standards/content.md#content-07)、[ORG-07](../../../shared/standards/organization.md#org-07)和[VOICE-06](../../../shared/standards/voice.md#voice-06)核对实际缺失的内容关系。
 
 只有确认正文原本需要这些关系、且它们确实缺失，才作违规判定。修复方向指向应补充或重组的对象、前提、证据与说明，不以“术语减少一半”“多加两个例子”“每段都展开”替代判断。不得为了消除密度问题而删掉真实有效的技术内容。
+
+<a id="audit-08"></a>
+## AUDIT-08 严禁标题包装取代内容命名
+
+完整执行[ORG-06](../../../shared/standards/organization.md#org-06)的命名标准与[ORG-08](../../../shared/standards/organization.md#org-08)的 14 项禁令。机械疑问、冒号包装、虚假对立递进、文案钩子、过程播报、模糊口语、概念拼接、别扭汉语、抽象堆砌、数字凑类、过长标题、目录同质化、无依据结论和职责脱节均在审查范围内；不得只检查本轮最近提到的一类。
+
+主标题对照全文重心，小标题对照本节、上级标题和必要的相邻内容。确认具体违规即要求修复，处理方向指向应命名的对象及关系。不得按标点、疑问词、字符数、标题相似度直接判错，也不得要求用户在原标题没有问题时换成另一种同样有效的表达。只收到题目而没有内容时，可判断明确的语言问题，内容对应关系保留待核实。

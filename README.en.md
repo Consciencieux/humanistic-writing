@@ -48,4 +48,8 @@ python scripts/package_skills.py source
 
 `build` creates self-contained coordinator, Guide and Audit archives. `source` archives the complete repository, including documentation, evaluation cases and tests, excluding builds, caches, evaluation runs and Git metadata. Neither command publishes remotely.
 
-See [architecture](docs/architecture.md), [design](docs/design.md), [behavioral evaluation](evals/README.md), and [contribution guidance](CONTRIBUTING.md). [MIT license](LICENSE).
+See [architecture](docs/architecture.md), [behavioral evaluation](evals/README.md), and [contribution guidance](CONTRIBUTING.md). [MIT license](LICENSE).
+
+## Titles and section headings
+
+Use the Guide's [heading method](skills/humanistic-writing-guide/references/headings.md) to name the actual subject or relationship, and the shared [heading standard](shared/standards/organization.md#org-06) and [prohibitions](shared/standards/organization.md#org-08) to review the result. Article titles and section headings have distinct scopes. Chinese heading-length ranges are editing cues, not quality scores or automatic failure thresholds. A heading-only request preserves the body text.

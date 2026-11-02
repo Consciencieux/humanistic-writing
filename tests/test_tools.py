@@ -70,7 +70,7 @@ class PackageTests(unittest.TestCase):
             package.archive_source(ROOT, output)
             with zipfile.ZipFile(output) as archive:
                 names = set(archive.namelist())
-            for relative in ["SKILL.md", "skills/humanistic-writing-guide/SKILL.md", "docs/design.md", "scripts/package_skills.py", "evals/cases.json", "tests/test_tools.py", "skills/humanistic-writing-guide/references/revise.md", "skills/humanistic-writing-audit/references/prohibitions.md", "evals/fixtures/local-edit/article.md"]:
+            for relative in ["SKILL.md", "skills/humanistic-writing-guide/SKILL.md", "docs/architecture.md", "scripts/package_skills.py", "evals/cases.json", "tests/test_tools.py", "skills/humanistic-writing-guide/references/revise.md", "skills/humanistic-writing-audit/references/prohibitions.md", "evals/fixtures/local-edit/article.md"]:
                 self.assertIn(f"humanistic-writing/{relative}", names)
             self.assertFalse(any("/__pycache__/" in name or "/dist/" in name or "/.git/" in name
                                  or "/shared/methods/" in name for name in names))

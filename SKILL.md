@@ -1,6 +1,6 @@
 ---
 name: humanistic-writing
-description: 通用自然语言写作与编辑。按作品目的和真实内容协调构思、起草、续写、润色、压缩扩写、翻译、整理、审查与版本比较；适用于需要控制修改范围、保护作者内容或改善模板化表达的任务。
+description: 通用自然语言写作与编辑。按作品目的和真实内容协调拟题、构思、起草、续写、润色、压缩扩写、翻译、整理、审查与版本比较；适用于需要控制修改范围、保护作者内容或改善模板化表达的任务。
 license: MIT
 ---
 
@@ -10,7 +10,7 @@ license: MIT
 
 | 当前成果 | 执行角色 |
 | --- | --- |
-| 构思、作品、续写、修订、翻译或整理 | [Guide](skills/humanistic-writing-guide/SKILL.md) |
+| 拟题、构思、作品、续写、修订、翻译或整理 | [Guide](skills/humanistic-writing-guide/SKILL.md) |
 | 审查、版本比较、分析修改原因 | [Audit](skills/humanistic-writing-audit/SKILL.md) |
 | 检查并修改 | Audit 确认问题，Guide 依据原稿与同一授权修订 |
 

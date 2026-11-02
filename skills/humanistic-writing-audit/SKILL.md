@@ -1,6 +1,6 @@
 ---
 name: humanistic-writing-audit
-description: 通用自然语言文稿的只读审查与版本比较。依据作品目的和实际上下文检查目标替代、机械处理、修改越界、内容损失及未完成问题，给出有位置和依据的诊断。
+description: 通用自然语言文稿与标题的只读审查与版本比较。依据作品目的和实际上下文检查目标替代、机械处理、修改越界、内容损失及未完成问题，给出有位置和依据的诊断。
 license: MIT
 ---
 
@@ -15,6 +15,7 @@ license: MIT
 | 审查对象 | 读取的标准 |
 | --- | --- |
 | 内容是否形成、必要细节是否丢失 | [内容](../../shared/standards/content.md) |
+| 文章主标题、小标题与目录 | [组织](../../shared/standards/organization.md)，按 AUDIT-08 核对内容命名与全部标题禁令 |
 | 篇章职责、顺序、重复或长度 | [组织](../../shared/standards/organization.md) |
 | 句段表达、语言痕迹与实际功能 | [语言](../../shared/standards/prose.md) |
 | 理由、因果、比较或结论强度 | [推理](../../shared/standards/reasoning.md) |

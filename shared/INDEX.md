@@ -9,7 +9,7 @@
 | --- | --- | --- |
 | 任务、内容判断、取舍、授权与完成 | [决策契约](core.md) | CORE-01～CORE-05 |
 | 角度、素材、细节、解释中间层与数据意义 | [内容](standards/content.md) | CONTENT-01～CONTENT-07 |
-| 先后关系、段落职责、篇幅、标题与内容分配 | [组织](standards/organization.md) | ORG-01～ORG-07 |
+| 先后关系、段落职责、篇幅、标题与内容分配 | [组织](standards/organization.md) | ORG-01～ORG-08 |
 | 成文与语言审核、直接禁止表演性表达 | [语言](standards/prose.md) | PROSE-01～PROSE-12 |
 | 依据、因果、比较、结论与求解程度 | [推理](standards/reasoning.md) | LOGIC-01～LOGIC-05 |
 | 作者、人物、视角、口头与正式语域 | [声音](standards/voice.md) | VOICE-01～VOICE-07 |
@@ -27,10 +27,11 @@
 | “有思考”应展开什么 | [内容重心](standards/content.md#content-01)、[解释中间层](standards/content.md#content-06)、[理由与结论](standards/reasoning.md#logic-02) |
 | 术语、数字与结论只是罗列 | [解释中间层](standards/content.md#content-06)、[术语和数据](standards/content.md#content-07) |
 | 演讲是否适合听众、论文风格是否准确 | [口头表达](standards/voice.md#voice-06)、[正式表达](standards/voice.md#voice-07) |
-| 表演性幽默、口语、引号、标题钩子 | [直接禁令](standards/prose.md#prose-09)、[标题禁令](standards/organization.md#org-06) |
+| 表演性幽默、口语、引号、标题钩子 | [直接禁令](standards/prose.md#prose-09)、[标题禁令](standards/organization.md#org-08) |
+| 主标题与章节如何命名、提炼与控制长度 | [内容命名](standards/organization.md#org-06)、[完整标题禁令](standards/organization.md#org-08) |
 | 长度来自重复还是必要关系拥挤 | [段落职责](standards/organization.md#org-02)、[长度](standards/organization.md#org-05)、[句间承接](standards/prose.md#prose-03) |
 | 一种语言形式在这里有什么作用 | [修辞](standards/prose.md#prose-06)、[功能](standards/prose.md#prose-08)、[声音](standards/voice.md#voice-02) |
 | 改写是否改变了作者责任或判断强度 | [真实作者](standards/voice.md#voice-04)、[范围与强度](standards/reasoning.md#logic-03)、[归属](standards/sources.md#src-03) |
 | 如何保留当前稿并查看真实改动 | [变更边界](core.md#core-04)、[定位编辑](tooling/capabilities.md#tool-04)、[接续](protocols/context.md#ctx-04) |
 
-[编号定位工具](../scripts/rules.py)从实际二级标题读取编号，支持共享标准和当前安装包的角色方法：`python scripts/rules.py CORE-03 --file`。仅安装 Audit 时可查询 REVIEW、AUDIT 及共享编号；仅安装 Guide 时可查询 WRITE、EDIT、XFORM 及共享编号。
+[编号定位工具](../scripts/rules.py)从实际二级标题读取编号，支持共享标准和当前安装包的角色方法：`python scripts/rules.py CORE-03 --file`。仅安装 Audit 时可查询 REVIEW、AUDIT 及共享编号；仅安装 Guide 时可查询 WRITE、EDIT、XFORM、EXPLAIN、REGISTER、HEADING 及共享编号。

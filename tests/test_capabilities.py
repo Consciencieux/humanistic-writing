@@ -62,7 +62,8 @@ class CapabilityTests(unittest.TestCase):
 
     def test_installed_lookup_reads_role_method_and_rejects_absent_role(self):
         for kind, ident, absent in (("guide", "EDIT-02", "AUDIT-01"),
-                                    ("audit", "AUDIT-03", "EDIT-01")):
+                                    ("guide", "HEADING-02", "AUDIT-08"),
+                                    ("audit", "AUDIT-08", "HEADING-01")):
             with self.subTest(kind=kind), tempfile.TemporaryDirectory() as temporary:
                 directory = Path(temporary)
                 skill = package.populate(ROOT, directory, kind)
