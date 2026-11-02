@@ -15,4 +15,4 @@ python scripts/package_skills.py source
 
 按变更检查资源、定位及封装；既有测试可在结构迁移后更新有效场景。模型行为按[评估说明](evals/README.md)实际运行，未运行的案例不写通过结果。评估材料和运行记录不进入安装包，运行记录也不进入源码归档。
 
-分发前更新 VERSION。build 构建自包含协调包及独立角色包，source 归档完整源码。两者都不执行远程发布。
+分发前更新 VERSION。build 构建自包含协调包及独立角色包，source 归档完整源码。两者都不执行远程发布。推送与 VERSION 完全一致的 `v*` 标签后，[Release](.github/workflows/release.yml) 运行上述检查、测试和打包，并把四个 ZIP 发布到对应 GitHub Release。
