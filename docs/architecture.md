@@ -41,4 +41,4 @@
 
 源码保存唯一的共享标准及两个角色的方法。协调安装包将角色转为 `roles/guide.md`、`roles/audit.md`，对应方法放在 `roles/guide/` 与 `roles/audit/`。独立包将本角色入口作为根 SKILL.md，自己的方法放在 references，只携带本角色与共享资源。
 
-构建时自动将 `shared/core.md` 嵌入各安装包入口 `SKILL.md`（降级标题层级以保持 `shared/core.md` 作为 `rules.py` 的唯一定义所有者），并按实际文件映射重定位链接、检查引用和编号。
+构建时自动将 `shared/core.md` 与 `CTX-01`–`CTX-03` 嵌入各安装包入口 `SKILL.md`（降级标题层级以保持源码作为 `rules.py` 的唯一定义所有者），同时清理协调包 `roles/*.md` 中的嵌入标记，并按实际文件映射重定位链接、检查引用和编号。

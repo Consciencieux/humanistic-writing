@@ -14,11 +14,13 @@ license: MIT
 
 <!-- EMBED:CORE -->
 
+<!-- EMBED:CTX -->
+
 | 当前操作 | 方法 | 本轮工作的依据 |
 | --- | --- | --- |
 | 文章拟题、章节命名、目录调整 | [标题](references/headings.md) | 全文或本节实际内容、主要对象及必要范围 |
 | 构思、起草、续写 | [成文](references/compose.md) | 作品目的、材料、选定内容及关系 |
-| 开头切入、结尾收束、无连接词承接 | [开篇与收束](references/closings.md) | 前文终点、作品用途、需留存的边界 |
+| 完整篇幅的开篇切入、段落过渡与结尾收束 | [开篇与收束](references/closings.md) | 全文目的、尚缺的收束动作与边界 |
 | 润色、删改、压缩扩写、重组、重写 | [修订](references/revise.md) | 最新原稿、目标区域、具体改善与保留内容 |
 | 翻译、摘要、整理、改变受众或语域 | [转换](references/transform.md)与修订 | 源文、目标用途、允许取舍的内容 |
 
@@ -39,12 +41,7 @@ license: MIT
 | 使用来源、引文、事实或数据 | `[条件]` | [来源](../../shared/standards/sources.md) |
 | 文件读取、定位编辑、差异、计数或产物 | `[回查]` | [工具](../../shared/tooling/capabilities.md) |
 
-首次使用完整读取，关联链接按实际需要进入。[索引](../../shared/INDEX.md)供定位与回查。纯提纲、结构诊断或格式操作不预先加载全部语言规则。
-
-按常见场景选择最小加载组合，避免一次加载无关标准稀释注意力：
-* **实用通知 / 职场沟通**：`core.md` + `compose.md` + `closings.md` + `prose.md`
-* **深度分析 / 技术说明 / 汇报**：`core.md` + `compose.md` + `explain.md` + `closings.md` + `reasoning.md`
-* **局部润色 / 压缩扩写**：`core.md` + `revise.md` + 问题对应的单项标准（如 `prose.md` 或 `organization.md`）
+首次使用按上表整文件完整读取，不递归跟踪普通参考链接；已嵌入入口的核心契约与基础协议不重复读取。短任务或局部编辑仅加载对应操作方法与 `[必需]` 项；涉及复杂解释、特定语域或完整篇章收束时，按实际触发条件追加 `[条件]` 项。[索引](../../shared/INDEX.md)仅作维护与未知问题回查。
 
 ## 完成与交接
 

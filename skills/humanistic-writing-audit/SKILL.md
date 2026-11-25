@@ -14,6 +14,8 @@ license: MIT
 
 <!-- EMBED:CORE -->
 
+<!-- EMBED:CTX -->
+
 | 审查对象 | 读取的标准 |
 | --- | --- |
 | 内容是否形成、必要细节是否丢失 | [内容](../../shared/standards/content.md) |

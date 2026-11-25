@@ -10,6 +10,8 @@ license: MIT
 
 <!-- EMBED:CORE -->
 
+<!-- EMBED:CTX -->
+
 | 当前成果 | 执行角色 |
 | --- | --- |
 | 拟题、构思、作品、续写、修订、翻译或整理 | [Guide](skills/humanistic-writing-guide/SKILL.md) |
