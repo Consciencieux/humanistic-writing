@@ -267,6 +267,22 @@ def rewrite_links(text: str, source: Path, destination: Path,
     return "".join(lines)
 
 
+
+def embed_core_contract(entry_text: str, core_text: str) -> str:
+    """Embed shared/core.md into runtime SKILL.md without duplicating level-2 rule IDs."""
+    marker = "<!-- EMBED:CORE -->"
+    if marker not in entry_text:
+        return entry_text
+    cleaned = re.sub(r'^<a\s+id="core-\d{2}"\s*></a>\s*\n', "", core_text, flags=re.MULTILINE)
+    cleaned = re.sub(r"^## (CORE-\d{2}\b)", r"### \1", cleaned, flags=re.MULTILINE)
+    cleaned = re.sub(r"^# .*?\n+", "", cleaned, count=1)
+    block = (
+        "## 常驻决策契约（构建时已自动嵌入，无需另读 core.md）\n\n"
+        + cleaned.strip()
+        + "\n"
+    )
+    return entry_text.replace(marker, block, 1)
+
 def populate(root: Path, stage: Path, kind: str) -> Path:
     target_root = stage / NAMES[kind]
     mapping = mapping_for(root, kind)
@@ -280,6 +296,10 @@ def populate(root: Path, stage: Path, kind: str) -> Path:
             }:
                 _, text = frontmatter(source)
             text = rewrite_links(text, source, relative, mapping, root)
+            if relative == Path("SKILL.md"):
+                core_path = (root / "shared/core.md").resolve()
+                core_text = rewrite_links(core_path.read_text(encoding="utf-8"), core_path, relative, mapping, root)
+                text = embed_core_contract(text, core_text)
             target.write_text(text, encoding="utf-8")
         else:
             target.write_bytes(source.read_bytes())

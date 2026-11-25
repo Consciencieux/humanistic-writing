@@ -10,7 +10,9 @@ license: MIT
 
 ## 启动与操作
 
-完整读取[决策契约](../../shared/core.md)和[加载协议](../../shared/protocols/context.md)，再进入当前操作的方法。完整且仍有效的原文可以复用。
+确认[决策契约](../../shared/core.md)与[加载协议](../../shared/protocols/context.md)后，按下方单层路由选择当前操作与条件标准。
+
+<!-- EMBED:CORE -->
 
 | 当前操作 | 方法 | 本轮工作的依据 |
 | --- | --- | --- |
@@ -24,17 +26,18 @@ license: MIT
 
 ## 按实际工作选择能力
 
-| 工作 | 读取 |
-| --- | --- |
-| 选择角度、发展材料或细节 | [内容](../../shared/standards/content.md) |
-| 多段安排、重排、标题层级或篇幅分配 | [组织](../../shared/standards/organization.md) |
-| 解释概念、数据、论证中间层或改善内容充实度 | [解释方法](references/explain.md)、[内容](../../shared/standards/content.md)与需要的[推理](../../shared/standards/reasoning.md) |
-| 口头汇报、学术／正式表述、个人表达或跨语域转换 | [语域方法](references/registers.md)、[声音](../../shared/standards/voice.md) |
-| 已选定内容进入成文，或修改句段表达 | [语言](../../shared/standards/prose.md) |
-| 形成理由、比较、解释或结论 | [推理](../../shared/standards/reasoning.md) |
-| 建立或保持作者、人物、语域与声音 | [声音](../../shared/standards/voice.md) |
-| 使用来源、引文、事实或数据 | [来源](../../shared/standards/sources.md) |
-| 文件读取、定位编辑、差异、计数或产物 | [工具](../../shared/tooling/capabilities.md) |
+| 工作与触发条件 | 依赖 | 读取（整文件完整取得） |
+| --- | --- | --- |
+| 选择角度、发展材料或细节 | `[条件]` | [内容](../../shared/standards/content.md) |
+| 多段安排、重排、开头结尾或篇幅分配 | `[条件]` | [组织](../../shared/standards/organization.md) |
+| 主标题、小标题命名与 14 项标题禁令 | `[条件]` | [标题](../../shared/standards/titles.md) |
+| 解释概念、数据、论证中间层或改善内容充实度 | `[条件]` | [解释方法](references/explain.md)、[内容](../../shared/standards/content.md)、[推理](../../shared/standards/reasoning.md) |
+| 口头汇报、学术／正式表述、个人表达或跨语域转换 | `[条件]` | [语域方法](references/registers.md)、[声音](../../shared/standards/voice.md) |
+| 已选定内容进入成文，或修改句段表达 | `[必需]` | [语言](../../shared/standards/prose.md) |
+| 形成理由、比较、解释或结论 | `[条件]` | [推理](../../shared/standards/reasoning.md) |
+| 建立或保持作者、人物、语域与声音 | `[条件]` | [声音](../../shared/standards/voice.md) |
+| 使用来源、引文、事实或数据 | `[条件]` | [来源](../../shared/standards/sources.md) |
+| 文件读取、定位编辑、差异、计数或产物 | `[回查]` | [工具](../../shared/tooling/capabilities.md) |
 
 首次使用完整读取，关联链接按实际需要进入。[索引](../../shared/INDEX.md)供定位与回查。纯提纲、结构诊断或格式操作不预先加载全部语言规则。
 
