@@ -16,7 +16,7 @@ license: MIT
 | --- | --- |
 | 内容是否形成、必要细节是否丢失 | [内容](../../shared/standards/content.md) |
 | 文章主标题、小标题与目录 | [组织](../../shared/standards/organization.md)，按 AUDIT-08 核对内容命名与全部标题禁令 |
-| 篇章职责、顺序、重复或长度 | [组织](../../shared/standards/organization.md) |
+| 篇章职责、顺序、开头结尾或长度 | [组织](../../shared/standards/organization.md)，结尾对照 AUDIT-09 |
 | 句段表达、语言痕迹与实际功能 | [语言](../../shared/standards/prose.md) |
 | 理由、因果、比较或结论强度 | [推理](../../shared/standards/reasoning.md) |
 | 作者立场、人物声音或语域 | [声音](../../shared/standards/voice.md) |

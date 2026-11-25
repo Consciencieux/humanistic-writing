@@ -29,6 +29,7 @@
 | 演讲是否适合听众、论文风格是否准确 | [口头表达](standards/voice.md#voice-06)、[正式表达](standards/voice.md#voice-07) |
 | 表演性幽默、口语、引号、标题钩子 | [直接禁令](standards/prose.md#prose-09)、[标题禁令](standards/organization.md#org-08) |
 | 主标题与章节如何命名、提炼与控制长度 | [内容命名](standards/organization.md#org-06)、[完整标题禁令](standards/organization.md#org-08) |
+| 开头空泛、句间生硬或结尾出现莫名反问／戛然而止 | [入口与结束](standards/organization.md#org-03)、[句间承接](standards/prose.md#prose-03)、[求解程度](standards/reasoning.md#logic-05) |
 | 长度来自重复还是必要关系拥挤 | [段落职责](standards/organization.md#org-02)、[长度](standards/organization.md#org-05)、[句间承接](standards/prose.md#prose-03) |
 | 一种语言形式在这里有什么作用 | [修辞](standards/prose.md#prose-06)、[功能](standards/prose.md#prose-08)、[声音](standards/voice.md#voice-02) |
 | 改写是否改变了作者责任或判断强度 | [真实作者](standards/voice.md#voice-04)、[范围与强度](standards/reasoning.md#logic-03)、[归属](standards/sources.md#src-03) |
