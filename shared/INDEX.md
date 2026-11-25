@@ -1,6 +1,6 @@
 # 共享能力索引
 
-需要查找专项标准时使用。创作、修订、转换与审核方法从各自角色入口进入；本索引只维护共享能力的定位。
+维护检索与未知问题回查索引；日常执行优先从各入口的路由表直接进入，不必每次先读本页。
 
 <a id="capabilities"></a>
 ## 按当前内容选择
@@ -9,7 +9,8 @@
 | --- | --- | --- |
 | 任务、内容判断、取舍、授权与完成 | [决策契约](core.md) | CORE-01～CORE-05 |
 | 角度、素材、细节、解释中间层与数据意义 | [内容](standards/content.md) | CONTENT-01～CONTENT-07 |
-| 先后关系、段落职责、篇幅、标题与内容分配 | [组织](standards/organization.md) | ORG-01～ORG-08 |
+| 先后关系、段落职责、开头结尾与篇幅 | [组织](standards/organization.md) | ORG-01～ORG-05、ORG-07 |
+| 文章主标题、小标题与 14 项标题禁令 | [标题](standards/titles.md) | ORG-06、ORG-08 |
 | 成文与语言审核、直接禁止表演性表达 | [语言](standards/prose.md) | PROSE-01～PROSE-12 |
 | 依据、因果、比较、结论与求解程度 | [推理](standards/reasoning.md) | LOGIC-01～LOGIC-05 |
 | 作者、人物、视角、口头与正式语域 | [声音](standards/voice.md) | VOICE-01～VOICE-07 |
@@ -27,8 +28,9 @@
 | “有思考”应展开什么 | [内容重心](standards/content.md#content-01)、[解释中间层](standards/content.md#content-06)、[理由与结论](standards/reasoning.md#logic-02) |
 | 术语、数字与结论只是罗列 | [解释中间层](standards/content.md#content-06)、[术语和数据](standards/content.md#content-07) |
 | 演讲是否适合听众、论文风格是否准确 | [口头表达](standards/voice.md#voice-06)、[正式表达](standards/voice.md#voice-07) |
-| 表演性幽默、口语、引号、标题钩子 | [直接禁令](standards/prose.md#prose-09)、[标题禁令](standards/organization.md#org-08) |
-| 主标题与章节如何命名、提炼与控制长度 | [内容命名](standards/organization.md#org-06)、[完整标题禁令](standards/organization.md#org-08) |
+| 表演性幽默、口语、引号、标题钩子 | [直接禁令](standards/prose.md#prose-09)、[标题禁令](standards/titles.md#org-08) |
+| 主标题与章节如何命名、提炼与控制长度 | [内容命名](standards/titles.md#org-06)、[完整标题禁令](standards/titles.md#org-08) |
+| 开头空泛、句间生硬或结尾出现莫名反问／戛然而止 | [入口与结束](standards/organization.md#org-03)、[句间承接](standards/prose.md#prose-03)、[求解程度](standards/reasoning.md#logic-05) |
 | 长度来自重复还是必要关系拥挤 | [段落职责](standards/organization.md#org-02)、[长度](standards/organization.md#org-05)、[句间承接](standards/prose.md#prose-03) |
 | 一种语言形式在这里有什么作用 | [修辞](standards/prose.md#prose-06)、[功能](standards/prose.md#prose-08)、[声音](standards/voice.md#voice-02) |
 | 改写是否改变了作者责任或判断强度 | [真实作者](standards/voice.md#voice-04)、[范围与强度](standards/reasoning.md#logic-03)、[归属](standards/sources.md#src-03) |

@@ -40,7 +40,7 @@
 <a id="audit-06"></a>
 ## AUDIT-06 严禁普通文本中的表演性修饰与伪互动
 
-常规说明、课程汇报、非虚构论述与正式发言，严格执行共享语言标准的[表演性口语与假互动](../../../shared/standards/prose.md#prose-09)、[装饰性幽默与金句](../../../shared/standards/prose.md#prose-10)、[引号与排版重音](../../../shared/standards/prose.md#prose-11)和[人为对立与批量修辞](../../../shared/standards/prose.md#prose-12)禁令，标题执行[ORG-08](../../../shared/standards/organization.md#org-08)。确认为这些行为，必须标为需要修复，不得降格为可选风格偏好。
+常规非虚构文本的语言禁令以[PROSE-09](../../../shared/standards/prose.md#prose-09)至[PROSE-12](../../../shared/standards/prose.md#prose-12)为唯一权威定义，标题禁令以[ORG-08](../../../shared/standards/titles.md#org-08)为唯一权威定义。Audit 确认上述行为成立时必须标为需要修复，不得降格为可选风格偏好。
 
 审查要写明它在具体句段怎样制造表演、代替信息、破坏语域或形成批量结构；删除装饰，必要时恢复被遮挡的事实与解释。不把某个关键词、引号或比喻一出现就当作违规，不因稿件本身是引用材料就要求篡改原文。严禁给违规句式提供更俏皮、更隐蔽的替换方案。
 
@@ -54,6 +54,13 @@
 <a id="audit-08"></a>
 ## AUDIT-08 严禁标题包装取代内容命名
 
-完整执行[ORG-06](../../../shared/standards/organization.md#org-06)的命名标准与[ORG-08](../../../shared/standards/organization.md#org-08)的 14 项禁令。机械疑问、冒号包装、虚假对立递进、文案钩子、过程播报、模糊口语、概念拼接、别扭汉语、抽象堆砌、数字凑类、过长标题、目录同质化、无依据结论和职责脱节均在审查范围内；不得只检查本轮最近提到的一类。
+完整加载[标题标准](../../../shared/standards/titles.md)并依据[ORG-06](../../../shared/standards/titles.md#org-06)与[ORG-08](../../../shared/standards/titles.md#org-08)全部条款裁决，不得只检查本轮最近提到的一类。
 
 主标题对照全文重心，小标题对照本节、上级标题和必要的相邻内容。确认具体违规即要求修复，处理方向指向应命名的对象及关系。不得按标点、疑问词、字符数、标题相似度直接判错，也不得要求用户在原标题没有问题时换成另一种同样有效的表达。只收到题目而没有内容时，可判断明确的语言问题，内容对应关系保留待核实。
+
+<a id="audit-09"></a>
+## AUDIT-09 依据正文落点裁决结尾缺陷
+
+对照[ORG-03](../../../shared/standards/organization.md#org-03)与[LOGIC-05](../../../shared/standards/reasoning.md#logic-05)，核查结尾段是否完成全文所需的收束动作，以及是否违背结尾禁令。
+
+审查须指明尾段与前文断层、无依据引入新议题或同义空转的具体句段，修复方向指向应补出的落点或删去多余尾段；不得将前文已铺垫的真实未决问题、学术论文所需的综合概括或有效叙事余韵误判为违规。

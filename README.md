@@ -18,11 +18,11 @@ Guide 主动发展内容并选择表达方法。修订以最新原稿为基线�
 
 ## 标题与目录
 
-支持文章主标题和各级小标题的拟定、修改与审查。Guide 从实际内容提炼主要对象或关系，提供面向说明、汇报、读书笔记和技术文档的[命名方法](skills/humanistic-writing-guide/references/headings.md)；Audit 结合正文执行[完整标题禁令](shared/standards/organization.md#org-08)。小标题长度仅作编辑提示，主标题按全文重心与实际格式处理。只改标题时保留正文。
+支持文章主标题和各级小标题的拟定、修改与审查。Guide 从实际内容提炼主要对象或关系，提供面向说明、汇报、读书笔记和技术文档的[命名方法](skills/humanistic-writing-guide/references/headings.md)；Audit 结合正文执行[完整标题禁令](shared/standards/titles.md#org-08)。小标题长度仅作编辑提示，主标题按全文重心与实际格式处理。只改标题时保留正文。
 
 ## 写作要求与具体禁令
 
-宏观治理继续以[决策契约](shared/core.md)为基础：从内容决定写法、修改幅度与停止条件。针对已发现的表演性写法，[语言标准](shared/standards/prose.md#prose-09)明确**直接禁止**主持人式串词、假互动、装饰性幽默与廉价比喻、金句、排版重音及虚构对立；[组织标准](shared/standards/organization.md#org-06)禁止批量标题钩子。不设计这些违规行为的“适量使用配方”，也不以替换同义句逃避禁令。
+宏观治理继续以[决策契约](shared/core.md)为基础：从内容决定写法、修改幅度与停止条件。针对已发现的表演性写法，[语言标准](shared/standards/prose.md#prose-09)明确**直接禁止**主持人式串词、假互动、装饰性幽默与廉价比喻、金句、排版重音及虚构对立；[组织标准](shared/standards/titles.md#org-06)禁止批量标题钩子。不设计这些违规行为的“适量使用配方”，也不以替换同义句逃避禁令。
 
 真正需要能力建设的事项同时有正面方法：Guide 的[解释与信息展开](skills/humanistic-writing-guide/references/explain.md)负责论证中间层、术语和数据的实际含义，[语域与表达场合](skills/humanistic-writing-guide/references/registers.md)负责口头汇报、学术／正式表达和个人声音；[内容](shared/standards/content.md#content-06)、[声音](shared/standards/voice.md#voice-06)等共享标准供 Guide 与 Audit 共同判断。Audit 的[严格禁令](skills/humanistic-writing-audit/references/prohibitions.md#audit-06)对确认的违规作明确裁决。
 

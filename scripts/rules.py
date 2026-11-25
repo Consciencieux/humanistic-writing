@@ -51,7 +51,6 @@ def collect(root: Path) -> dict[str, Rule]:
     if not shared.is_dir():
         raise RuleError(f'Missing capability directory: {shared}')
     result: dict[str, Rule] = {}
-    owners: dict[str, str] = {}
     for path in runtime_markdown(root):
         text = path.read_text(encoding='utf-8')
         lines = text.splitlines()
@@ -80,10 +79,6 @@ def collect(root: Path) -> dict[str, Rule]:
                 raise RuleError(f'{relative}: anchor is not unique: {ident}')
             if ident in result:
                 raise RuleError(f'Duplicate ID: {ident} in {relative} and {result[ident].path}')
-            prefix = ident.split('-')[0]
-            if prefix in owners and owners[prefix] != relative:
-                raise RuleError(f'Prefix {prefix} has more than one owner: {owners[prefix]}, {relative}')
-            owners[prefix] = relative
             end = len(lines)
             for next_level, next_start, next_heading in headings[pos + 1:]:
                 if next_level <= level:

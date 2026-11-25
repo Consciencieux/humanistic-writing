@@ -267,6 +267,42 @@ def rewrite_links(text: str, source: Path, destination: Path,
     return "".join(lines)
 
 
+
+def _demote_rules(text: str, prefix: str) -> str:
+    cleaned = re.sub(rf'^<a\s+id="{prefix.lower()}-\d{{2}}"\s*></a>\s*\n', "", text, flags=re.MULTILINE)
+    cleaned = re.sub(rf"^## ({prefix}-\d{{2}}\b)", r"### \1", cleaned, flags=re.MULTILINE)
+    cleaned = re.sub(r"^# .*?\n+", "", cleaned, count=1)
+    return cleaned.strip()
+
+
+def embed_baseline_contracts(entry_text: str, core_text: str, ctx_text: str) -> str:
+    """Embed shared/core.md and CTX-01..CTX-03 into runtime SKILL.md without duplicating level-2 rule IDs."""
+    if "<!-- EMBED:CORE -->" in entry_text:
+        block = (
+            "## 常驻决策契约（构建时已自动嵌入，无需另读 core.md）\n\n"
+            + _demote_rules(core_text, "CORE")
+            + "\n"
+        )
+        entry_text = entry_text.replace("<!-- EMBED:CORE -->", block, 1)
+    if "<!-- EMBED:CTX -->" in entry_text:
+        # Exclude CTX-04 (long-task state management remains on-demand in context.md)
+        ctx_core = ctx_text.split('<a id="ctx-04"></a>')[0]
+        block = (
+            "## 常驻加载与恢复协议（CTX-01～CTX-03 已嵌入；长任务状态 CTX-04 按需读取）\n\n"
+            + _demote_rules(ctx_core, "CTX")
+            + "\n"
+        )
+        entry_text = entry_text.replace("<!-- EMBED:CTX -->", block, 1)
+    return entry_text
+
+
+def strip_role_markers(role_text: str) -> str:
+    """Replace embed markers in combined-package role files with inheritance notice."""
+    notice = "> 核心决策契约与基础加载协议已由根入口加载，本角色直接沿用。\n"
+    role_text = re.sub(r"<!-- EMBED:CORE -->\s*", notice, role_text)
+    role_text = re.sub(r"<!-- EMBED:CTX -->\s*", "", role_text)
+    return role_text
+
 def populate(root: Path, stage: Path, kind: str) -> Path:
     target_root = stage / NAMES[kind]
     mapping = mapping_for(root, kind)
@@ -280,6 +316,14 @@ def populate(root: Path, stage: Path, kind: str) -> Path:
             }:
                 _, text = frontmatter(source)
             text = rewrite_links(text, source, relative, mapping, root)
+            if relative == Path("SKILL.md"):
+                core_path = (root / "shared/core.md").resolve()
+                ctx_path = (root / "shared/protocols/context.md").resolve()
+                core_text = rewrite_links(core_path.read_text(encoding="utf-8"), core_path, relative, mapping, root)
+                ctx_text = rewrite_links(ctx_path.read_text(encoding="utf-8"), ctx_path, relative, mapping, root)
+                text = embed_baseline_contracts(text, core_text, ctx_text)
+            elif kind == "combined" and relative.parts[:1] == ("roles",) and relative.suffix == ".md":
+                text = strip_role_markers(text)
             target.write_text(text, encoding="utf-8")
         else:
             target.write_bytes(source.read_bytes())

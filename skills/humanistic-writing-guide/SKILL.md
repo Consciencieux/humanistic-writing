@@ -10,12 +10,17 @@ license: MIT
 
 ## 启动与操作
 
-完整读取[决策契约](../../shared/core.md)和[加载协议](../../shared/protocols/context.md)，再进入当前操作的方法。完整且仍有效的原文可以复用。
+确认[决策契约](../../shared/core.md)与[加载协议](../../shared/protocols/context.md)后，按下方单层路由选择当前操作与条件标准。
+
+<!-- EMBED:CORE -->
+
+<!-- EMBED:CTX -->
 
 | 当前操作 | 方法 | 本轮工作的依据 |
 | --- | --- | --- |
 | 文章拟题、章节命名、目录调整 | [标题](references/headings.md) | 全文或本节实际内容、主要对象及必要范围 |
 | 构思、起草、续写 | [成文](references/compose.md) | 作品目的、材料、选定内容及关系 |
+| 完整篇幅的开篇切入、段落过渡与结尾收束 | [开篇与收束](references/closings.md) | 全文目的、尚缺的收束动作与边界 |
 | 润色、删改、压缩扩写、重组、重写 | [修订](references/revise.md) | 最新原稿、目标区域、具体改善与保留内容 |
 | 翻译、摘要、整理、改变受众或语域 | [转换](references/transform.md)与修订 | 源文、目标用途、允许取舍的内容 |
 
@@ -23,19 +28,20 @@ license: MIT
 
 ## 按实际工作选择能力
 
-| 工作 | 读取 |
-| --- | --- |
-| 选择角度、发展材料或细节 | [内容](../../shared/standards/content.md) |
-| 多段安排、重排、标题层级或篇幅分配 | [组织](../../shared/standards/organization.md) |
-| 解释概念、数据、论证中间层或改善内容充实度 | [解释方法](references/explain.md)、[内容](../../shared/standards/content.md)与需要的[推理](../../shared/standards/reasoning.md) |
-| 口头汇报、学术／正式表述、个人表达或跨语域转换 | [语域方法](references/registers.md)、[声音](../../shared/standards/voice.md) |
-| 已选定内容进入成文，或修改句段表达 | [语言](../../shared/standards/prose.md) |
-| 形成理由、比较、解释或结论 | [推理](../../shared/standards/reasoning.md) |
-| 建立或保持作者、人物、语域与声音 | [声音](../../shared/standards/voice.md) |
-| 使用来源、引文、事实或数据 | [来源](../../shared/standards/sources.md) |
-| 文件读取、定位编辑、差异、计数或产物 | [工具](../../shared/tooling/capabilities.md) |
+| 工作与触发条件 | 依赖 | 读取（整文件完整取得） |
+| --- | --- | --- |
+| 选择角度、发展材料或细节 | `[条件]` | [内容](../../shared/standards/content.md) |
+| 多段安排、重排、开头结尾或篇幅分配 | `[条件]` | [组织](../../shared/standards/organization.md) |
+| 主标题、小标题命名与 14 项标题禁令 | `[条件]` | [标题](../../shared/standards/titles.md) |
+| 解释概念、数据、论证中间层或改善内容充实度 | `[条件]` | [解释方法](references/explain.md)、[内容](../../shared/standards/content.md)、[推理](../../shared/standards/reasoning.md) |
+| 口头汇报、学术／正式表述、个人表达或跨语域转换 | `[条件]` | [语域方法](references/registers.md)、[声音](../../shared/standards/voice.md) |
+| 已选定内容进入成文，或修改句段表达 | `[必需]` | [语言](../../shared/standards/prose.md) |
+| 形成理由、比较、解释或结论 | `[条件]` | [推理](../../shared/standards/reasoning.md) |
+| 建立或保持作者、人物、语域与声音 | `[条件]` | [声音](../../shared/standards/voice.md) |
+| 使用来源、引文、事实或数据 | `[条件]` | [来源](../../shared/standards/sources.md) |
+| 文件读取、定位编辑、差异、计数或产物 | `[回查]` | [工具](../../shared/tooling/capabilities.md) |
 
-首次使用完整读取，关联链接按实际需要进入。[索引](../../shared/INDEX.md)供定位与回查。纯提纲、结构诊断或格式操作不预先加载全部语言规则。
+首次使用按上表整文件完整读取，不递归跟踪普通参考链接；已嵌入入口的核心契约与基础协议不重复读取。短任务或局部编辑仅加载对应操作方法与 `[必需]` 项；涉及复杂解释、特定语域或完整篇章收束时，按实际触发条件追加 `[条件]` 项。[索引](../../shared/INDEX.md)仅作维护与未知问题回查。
 
 ## 完成与交接
 
