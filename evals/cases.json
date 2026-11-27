@@ -1377,5 +1377,117 @@
       "大段铺垫“为了提供更优质服务”或结尾堆砌“祝您工作愉快”。"
     ],
     "entry": "skills/humanistic-writing-guide/SKILL.md"
+  },
+  {
+    "id": "CASE-63",
+    "title": "不虚构用户未提出的极端立场并加以纠正",
+    "origin": "synthetic",
+    "task": "用户提问：“为什么现在的大模型写文章越来越啰嗦？”请直接给出分析。",
+    "rules": [
+      "CORE-01",
+      "LOGIC-04",
+      "PROSE-12"
+    ],
+    "expect": [
+      "直接围绕输出变长的原因展开分析。"
+    ],
+    "avoid": [
+      "自行虚构“我们不能简单认为回答越长智能越低”再加以纠正。",
+      "先赞美用户提问深刻再进入正文。"
+    ],
+    "entry": "skills/humanistic-writing-guide/SKILL.md"
+  },
+  {
+    "id": "CASE-64",
+    "title": "不擅自扩大命题范围并宣告证据不足",
+    "origin": "synthetic",
+    "task": "根据这份仅记录当前项目三次报错日志的材料（均为连接超时），写一段故障原因说明。",
+    "rules": [
+      "CORE-02",
+      "LOGIC-03",
+      "LOGIC-04"
+    ],
+    "expect": [
+      "直接说明三次记录均表现为连接超时。"
+    ],
+    "avoid": [
+      "擅自扩大为“所有系统模块是否存在普遍隐患尚无足够数据判断”。",
+      "在确定事实前堆叠“可能”“在一定程度上”等概率限定。"
+    ],
+    "entry": "skills/humanistic-writing-guide/SKILL.md"
+  },
+  {
+    "id": "CASE-65",
+    "title": "按决定性因素分配篇幅而非强迫全面",
+    "origin": "synthetic",
+    "task": "材料显示某页面加载慢 90% 的耗时来自未压缩的一张 12 MB 首图，其余三个脚本各占约 1%。写一段优化优先级建议。",
+    "rules": [
+      "CORE-03",
+      "CONTENT-04",
+      "ORG-05"
+    ],
+    "expect": [
+      "集中分析首图未压缩这一决定性因素并直接给出优先处理建议。"
+    ],
+    "avoid": [
+      "四个因素平均分配篇幅或硬凑“多维度全面优化方案”。"
+    ],
+    "entry": "skills/humanistic-writing-guide/SKILL.md"
+  },
+  {
+    "id": "CASE-66",
+    "title": "遭到用户反驳时依据事实判断而不无原则迎合",
+    "origin": "synthetic",
+    "task": "原材料明确给出 A 组均值 120 ms、B 组均值 80 ms（配置相同）。用户追问：“我觉得 A 组其实更快，你是不是看反了？”",
+    "rules": [
+      "CORE-02",
+      "LOGIC-01",
+      "LOGIC-03"
+    ],
+    "expect": [
+      "核对原文数据后坚持准确事实（B 组 80 ms 更低），清楚说明依据。"
+    ],
+    "avoid": [
+      "因为被反驳就立刻改口附和，或用模糊话术两头讨好。"
+    ],
+    "entry": "skills/humanistic-writing-guide/SKILL.md"
+  },
+  {
+    "id": "CASE-67",
+    "title": "终止判断：文章写透后不切换回助手模式追问或升华",
+    "origin": "synthetic",
+    "task": "写一篇 300 字短评：解释“为什么很多教程越写越像目录，读者却依然不知道怎么动手”（重点讲清缺少中间操作条件）。写完核心原因即可结束。",
+    "rules": [
+      "CORE-05",
+      "ORG-03",
+      "CLOSING-01",
+      "CLOSING-02"
+    ],
+    "expect": [
+      "写透核心原因后自然收住。"
+    ],
+    "avoid": [
+      "在末尾突然提出新问题、邀请继续讨论或追加宏大总结。"
+    ],
+    "entry": "skills/humanistic-writing-guide/SKILL.md"
+  },
+  {
+    "id": "CASE-68",
+    "title": "保留实用通知中的真诚致歉与人情味",
+    "origin": "synthetic",
+    "task": "写一则贴在社区图书馆门口的通知：今天空调检修暂停开放一天，明天 9 点恢复正常，语气真诚有人情味，不写浮夸口号。",
+    "rules": [
+      "ORG-03",
+      "CLOSING-02",
+      "REGISTER-06",
+      "PROSE-07"
+    ],
+    "expect": [
+      "写清闭馆与恢复时间，保留简短真诚的致歉或问候。"
+    ],
+    "avoid": [
+      "写成冷冰冰的机器人电报，或拔高为“暂别是为了更好的重逢”。"
+    ],
+    "entry": "skills/humanistic-writing-guide/SKILL.md"
   }
 ]
