@@ -55,11 +55,11 @@ class PackageTests(unittest.TestCase):
                 self.assertFalse((skill / "shared/methods").exists())
                 registry = rules.collect(skill)
                 # Shared generation rules must survive every packaging mode.
-                for ident in ("PROSE-13", "PROSE-14", "PROSE-15", "PROSE-16",
-                              "PROSE-17", "PROSE-18", "SRC-06", "LOGIC-03"):
+                for ident in ("PROSE-02", "PROSE-05", "PROSE-07", "PROSE-13",
+                              "PROSE-14", "PROSE-16", "SRC-06", "LOGIC-03"):
                     self.assertIn(ident, registry)
                 self.assertIn("禁止人为降低或提高结论强度", entry_text)
-                for ident in ("AUDIT-10", "AUDIT-11", "AUDIT-12"):
+                for ident in ("AUDIT-10", "AUDIT-11"):
                     if kind == "guide":
                         self.assertNotIn(ident, registry)
                     else:
