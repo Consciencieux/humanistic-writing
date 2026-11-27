@@ -185,7 +185,12 @@ def check_capabilities(root: Path, entries: list[Path]) -> dict[str, rules.Rule]
 def check_source(root: Path) -> None:
     version(root)
     for kind, entry in ENTRIES.items():
-        check_entry(root / entry, NAMES[kind])
+        entry_path = root / entry
+        check_entry(entry_path, NAMES[kind])
+        entry_text = entry_path.read_text(encoding="utf-8")
+        for marker in ("<!-- EMBED:CORE -->", "<!-- EMBED:CTX -->"):
+            if marker not in entry_text:
+                raise RepositoryError(f"{entry}: missing embed marker: {marker}")
     for required in ("LICENSE", "README.md", "shared/core.md", "requirements.txt", "scripts/text_stats.py", "scripts/rules.py", "shared/INDEX.md", "evals/cases.json"):
         if not (root / required).is_file():
             raise RepositoryError(f"Missing required source: {required}")

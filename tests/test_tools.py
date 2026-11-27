@@ -97,6 +97,15 @@ class PackageTests(unittest.TestCase):
         self.assertIn("`[literal](../../shared/core.md)`", result)
         self.assertIn("[example](../../shared/core.md)", result)
 
+    def test_missing_embed_marker_stops_validation(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary) / "repo"
+            shutil.copytree(ROOT, root, ignore=shutil.ignore_patterns("dist", "__pycache__", ".git"))
+            entry = root / "SKILL.md"
+            entry.write_text(entry.read_text(encoding="utf-8").replace("<!-- EMBED:CORE -->", ""), encoding="utf-8")
+            with self.assertRaisesRegex(package.RepositoryError, "missing embed marker"):
+                package.check_source(root)
+
     def test_missing_resource_stops_validation(self):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary) / "repo"

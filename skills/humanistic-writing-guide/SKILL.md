@@ -34,7 +34,7 @@ license: MIT
 | 多段安排、重排、开头结尾或篇幅分配 | `[条件]` | [组织](../../shared/standards/organization.md) |
 | 主标题、小标题命名与 14 项标题禁令 | `[条件]` | [标题](../../shared/standards/titles.md) |
 | 解释概念、数据、论证中间层或改善内容充实度 | `[条件]` | [解释方法](references/explain.md)、[内容](../../shared/standards/content.md)、[推理](../../shared/standards/reasoning.md) |
-| 口头汇报、学术／正式表述、个人表达或跨语域转换 | `[条件]` | [语域方法](references/registers.md)、[声音](../../shared/standards/voice.md) |
+| 个人思考／文本回应、叙事场景、实用交际、口头汇报或学术正式语域 | `[条件]` | [语域方法](references/registers.md)、[声音](../../shared/standards/voice.md) |
 | 已选定内容进入成文，或修改句段表达 | `[必需]` | [语言](../../shared/standards/prose.md) |
 | 形成理由、比较、解释或结论 | `[条件]` | [推理](../../shared/standards/reasoning.md) |
 | 建立或保持作者、人物、语域与声音 | `[条件]` | [声音](../../shared/standards/voice.md) |

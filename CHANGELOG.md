@@ -1,11 +1,11 @@
 # Changelog
 
-## [0.2.0-dev] - 2026-11-25
+## [0.2.0] - 2026-11-25
 
-- Split `ORG-06` and `ORG-08` out of `shared/standards/organization.md` into `shared/standards/titles.md` and relaxed `scripts/rules.py` prefix exclusivity while keeping per-ID uniqueness.
-- Embedded `shared/core.md` and `CTX-01`–`CTX-03` into built `SKILL.md` entries via `scripts/package_skills.py`, cleaning embed markers in combined-package role files.
-- Unified Guide dependency routing (`[必需]` / `[条件]` / `[回查]`), deduplicated `prohibitions.md` and `voice.md`, and eliminated the `core.md` ↔ `prose.md` cycle.
-- Added `skills/humanistic-writing-guide/references/closings.md`, `AUDIT-09`, grounded `PROSE-03` / `CLOSING-03` examples, and evaluation cases `CASE-57`–`CASE-60`.
+- 标题规则从组织标准拆到 `shared/standards/titles.md`。普通起草不再加载标题禁令，拟题或审查标题时才读取。编号定位器允许不同角色共用前缀，仍保证单个编号唯一。
+- 打包时把决策契约和加载协议的 `CTX-01`～`CTX-03` 嵌进入口。安装包不必再重复读取原文件，资源检查会校验嵌入标记。
+- Guide 的资源加载改为必需、条件、回查三档，并删除按场景预配的清单。新增 `closings.md`，`registers.md` 补上个人思考、叙事场景和实用交际三类写法。Audit 新增 `AUDIT-09`，集中判定结尾问题。
+- 补齐结尾、语域和嵌入检查的评估案例与回归测试。
 
 ## [0.1.0] - 2026-11-02
 
