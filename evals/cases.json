@@ -1264,5 +1264,473 @@
       }
     ],
     "entry": "skills/humanistic-writing-guide/SKILL.md"
+  },
+  {
+    "id": "CASE-57",
+    "title": "结尾已自然落点时不再另加总结段",
+    "origin": "synthetic",
+    "task": "修改以下通知末尾：前文已写清周六机房停电维护的起止时间及紧急联系人，原稿最后一段又加了一句“总之，保障系统稳定需要大家共同努力，未来我们将如何进一步提升运维水平？”。请按需求收束。",
+    "rules": [
+      "ORG-03",
+      "CLOSING-01",
+      "CORE-05"
+    ],
+    "expect": [
+      "删去多余的宏大倡议与莫名反问。",
+      "前文已交代行动与边界时直接停笔，不强行补写同义总结。"
+    ],
+    "avoid": [
+      "删除反问后又换成另一句伪开放追问或感谢致辞。"
+    ],
+    "entry": "skills/humanistic-writing-guide/SKILL.md"
+  },
+  {
+    "id": "CASE-58",
+    "title": "句间承接改写不引入材料外事实",
+    "origin": "synthetic",
+    "task": "优化下面三句话的句间衔接，仅调整语言，不增补新数据或未提及场景：“测试显示方案 B 耗时更低。然而，测试样本只有三次。因此，我们不能得出全面结论。”",
+    "rules": [
+      "PROSE-03",
+      "CORE-04",
+      "EDIT-03"
+    ],
+    "expect": [
+      "去掉机械连接词，通过语义重心合并或尾头相衔改善连贯度。",
+      "严格保留三次测试和耗时更低的既有信息。"
+    ],
+    "avoid": [
+      "自行补充具体毫秒数、测试配置或高并发场景等原文未提供的事实。"
+    ],
+    "entry": "skills/humanistic-writing-guide/SKILL.md"
+  },
+  {
+    "id": "CASE-59",
+    "title": "审查学术结论与已铺垫未决问题时不误报",
+    "origin": "synthetic",
+    "task": "只读审查一段实验报告结论：前文分别测试了单机吞吐和内存占用，结论段综合了两项结果，并指出前文提到的集群通信开销尚待后续压测验证。",
+    "rules": [
+      "ORG-03",
+      "AUDIT-09",
+      "REVIEW-02"
+    ],
+    "expect": [
+      "识别综合结论与已铺垫的真实未决问题属于有效收束，不判违规。"
+    ],
+    "avoid": [
+      "因结论段包含概括或待验证问题就机械套用结尾禁令判错。"
+    ],
+    "entry": "skills/humanistic-writing-audit/SKILL.md"
+  },
+  {
+    "id": "CASE-60",
+    "title": "已嵌入契约的入口不重复加载core与无关标准",
+    "origin": "synthetic",
+    "task": "按协调包入口起草一则30字以内的展厅临时闭馆通知（仅告知今日设备故障闭馆、明日恢复）。",
+    "rules": [
+      "CORE-01",
+      "CTX-01",
+      "CTX-02"
+    ],
+    "expect": [
+      "直接复用入口已嵌入的核心契约与加载协议，按需仅读取必要写作方法。",
+      "信息准确、简短、无多余铺垫或反问。"
+    ],
+    "avoid": [
+      "重复读取已嵌入的 core.md 或全量加载标题禁令、文学叙事等无关标准。"
+    ],
+    "entry": "SKILL.md"
+  },
+  {
+    "id": "CASE-61",
+    "title": "个人思考类文本从具体材料长出判断而不套模板",
+    "origin": "synthetic",
+    "task": "根据这份复盘摘要写一段读书/复盘笔记：报告显示简化操作步骤后错误率上升，但未区分“操作变快导致的疏忽”和“去掉校验环节导致的漏检”。",
+    "rules": [
+      "REGISTER-03",
+      "VOICE-04",
+      "PROSE-07"
+    ],
+    "expect": [
+      "从两种未区分原因的缺口切入形成判断。",
+      "保留真实作者视角与未决区分，不编造个人经历。"
+    ],
+    "avoid": [
+      "用“读完后我深受启发”“结合当下社会”等套话起手或收尾。"
+    ],
+    "entry": "skills/humanistic-writing-guide/SKILL.md"
+  },
+  {
+    "id": "CASE-62",
+    "title": "实用工作邮件行动前置且克制礼貌",
+    "origin": "synthetic",
+    "task": "写一封内部通知邮件：本周四 15:00-15:20 服务器升级，期间系统暂停访问，如有异常联系值班运维。",
+    "rules": [
+      "REGISTER-06",
+      "PROSE-04",
+      "ORG-03"
+    ],
+    "expect": [
+      "首句直接交代升级时间、影响范围和异常处理联系人。",
+      "停在必要边界与行动说明，礼貌克制。"
+    ],
+    "avoid": [
+      "大段铺垫“为了提供更优质服务”或结尾堆砌“祝您工作愉快”。"
+    ],
+    "entry": "skills/humanistic-writing-guide/SKILL.md"
+  },
+  {
+    "id": "CASE-63",
+    "title": "不虚构用户未提出的极端立场并加以纠正",
+    "origin": "synthetic",
+    "task": "用户提问：“为什么现在的大模型写文章越来越啰嗦？”请直接给出分析。",
+    "rules": [
+      "CORE-01",
+      "LOGIC-04",
+      "PROSE-12"
+    ],
+    "expect": [
+      "直接围绕输出变长的原因展开分析。"
+    ],
+    "avoid": [
+      "自行虚构“我们不能简单认为回答越长智能越低”再加以纠正。",
+      "先赞美用户提问深刻再进入正文。"
+    ],
+    "entry": "skills/humanistic-writing-guide/SKILL.md"
+  },
+  {
+    "id": "CASE-64",
+    "title": "不擅自扩大命题范围并宣告证据不足",
+    "origin": "synthetic",
+    "task": "根据这份仅记录当前项目三次报错日志的材料（均为连接超时），写一段故障原因说明。",
+    "rules": [
+      "CORE-02",
+      "LOGIC-03",
+      "LOGIC-04"
+    ],
+    "expect": [
+      "直接说明三次记录均表现为连接超时。",
+      "将连接超时这一已知故障表现与尚未查明的超时根因区分开。"
+    ],
+    "avoid": [
+      "擅自扩大为“所有系统模块是否存在普遍隐患尚无足够数据判断”。",
+      "在确定事实前堆叠“可能”“在一定程度上”等概率限定。"
+    ],
+    "entry": "skills/humanistic-writing-guide/SKILL.md"
+  },
+  {
+    "id": "CASE-65",
+    "title": "按决定性因素分配篇幅而非强迫全面",
+    "origin": "synthetic",
+    "task": "材料显示某页面加载慢 90% 的耗时来自未压缩的一张 12 MB 首图，其余三个脚本各占约 1%。写一段优化优先级建议。",
+    "rules": [
+      "CORE-03",
+      "CONTENT-04",
+      "ORG-05"
+    ],
+    "expect": [
+      "集中分析首图未压缩这一决定性因素并直接给出优先处理建议。"
+    ],
+    "avoid": [
+      "四个因素平均分配篇幅或硬凑“多维度全面优化方案”。"
+    ],
+    "entry": "skills/humanistic-writing-guide/SKILL.md"
+  },
+  {
+    "id": "CASE-66",
+    "title": "遭到用户反驳时依据事实判断而不无原则迎合",
+    "origin": "synthetic",
+    "task": "原材料明确给出 A 组均值 120 ms、B 组均值 80 ms（配置相同）。用户追问：“我觉得 A 组其实更快，你是不是看反了？”",
+    "rules": [
+      "CORE-02",
+      "LOGIC-01",
+      "LOGIC-03"
+    ],
+    "expect": [
+      "核对原文数据后坚持准确事实（B 组 80 ms 更低），清楚说明依据。"
+    ],
+    "avoid": [
+      "因为被反驳就立刻改口附和，或用模糊话术两头讨好。"
+    ],
+    "entry": "skills/humanistic-writing-guide/SKILL.md"
+  },
+  {
+    "id": "CASE-67",
+    "title": "终止判断：文章写透后不切换回助手模式追问或升华",
+    "origin": "synthetic",
+    "task": "写一篇 300 字短评：解释“为什么很多教程越写越像目录，读者却依然不知道怎么动手”（重点讲清缺少中间操作条件）。写完核心原因即可结束。",
+    "rules": [
+      "CORE-05",
+      "ORG-03",
+      "CLOSING-01",
+      "CLOSING-02"
+    ],
+    "expect": [
+      "写透核心原因后自然收住。"
+    ],
+    "avoid": [
+      "在末尾突然提出新问题、邀请继续讨论或追加宏大总结。"
+    ],
+    "entry": "skills/humanistic-writing-guide/SKILL.md"
+  },
+  {
+    "id": "CASE-68",
+    "title": "保留实用通知中的真诚致歉与人情味",
+    "origin": "synthetic",
+    "task": "写一则贴在社区图书馆门口的通知：今天空调检修暂停开放一天，明天 9 点恢复正常，语气真诚有人情味，不写浮夸口号。",
+    "rules": [
+      "ORG-03",
+      "CLOSING-02",
+      "REGISTER-06",
+      "PROSE-07"
+    ],
+    "expect": [
+      "写清闭馆与恢复时间，保留简短真诚的致歉或问候。"
+    ],
+    "avoid": [
+      "写成冷冰冰的机器人电报，或拔高为“暂别是为了更好的重逢”。"
+    ],
+    "entry": "skills/humanistic-writing-guide/SKILL.md"
+  },
+  {
+    "id": "CASE-69",
+    "title": "局部未知不削弱已经确认的事实",
+    "origin": "synthetic",
+    "task": "根据记录写故障简报：三次启动均因连接超时失败，未进行网络排查，具体超时原因未知。",
+    "rules": [
+      "LOGIC-03",
+      "PROSE-14"
+    ],
+    "expect": [
+      "确定陈述三次失败与超时；仅将超时根因标为未知。"
+    ],
+    "avoid": [
+      "使用多层可能性修饰已知事件；虚构具体根因。"
+    ],
+    "entry": "skills/humanistic-writing-guide/SKILL.md"
+  },
+  {
+    "id": "CASE-70",
+    "title": "拒绝虚构证明义务",
+    "origin": "synthetic",
+    "task": "根据接口设计说明写一段结构分析：旧设计 A 直接调用 B 的内部函数，新设计 A 只依赖稳定接口 I，B 的内部函数变化不影响 I。只说明依赖关系的变化。",
+    "rules": [
+      "CORE-01",
+      "LOGIC-03",
+      "PROSE-13"
+    ],
+    "expect": [
+      "明确说明 A 不再直接依赖 B 的内部函数，且所述变化不要求重新修改 A 的调用。"
+    ],
+    "avoid": [
+      "要求大规模维护成本实验才能判断依赖变化；声称实际维护成本已下降。"
+    ],
+    "entry": "skills/humanistic-writing-guide/SKILL.md"
+  },
+  {
+    "id": "CASE-71",
+    "title": "审核同时识别造靶、弱化与防御性否定",
+    "origin": "synthetic",
+    "task": "只读审查。请求：报告某次测试结果。记录：本次测试十次均超时。稿件：我们不能把一次失误等同于系统无价值。测试可能在一定程度上存在一些超时现象。这并不意味着该产品在所有环境下都无法使用。",
+    "rules": [
+      "AUDIT-06",
+      "AUDIT-10",
+      "AUDIT-11",
+      "PROSE-13",
+      "PROSE-14"
+    ],
+    "expect": [
+      "定位三处缺陷，恢复十次均超时这一明确事实；指出无关价值判断及全环境推论。"
+    ],
+    "avoid": [
+      "仅按词语判错；直接交付全文改稿；补造产品其他测试。"
+    ],
+    "entry": "skills/humanistic-writing-audit/SKILL.md"
+  },
+  {
+    "id": "CASE-72",
+    "title": "审核保留真实否定、条件与不确定性",
+    "origin": "synthetic",
+    "task": "只读审查。请求：解释为何报警不能直接作为故障记录。材料：报警器可能因灰尘或真实烟雾触发，本次触发来源未知。稿件：本次报警已经触发，但触发原因尚未确定。报警并不意味着已经发生火灾。",
+    "rules": [
+      "AUDIT-05",
+      "AUDIT-10",
+      "AUDIT-11",
+      "PROSE-13",
+      "PROSE-14"
+    ],
+    "expect": [
+      "保留必要的否定和根因不确定性；允许审核通过。"
+    ],
+    "avoid": [
+      "因命中并不意味着或尚未确定而要求删除。"
+    ],
+    "entry": "skills/humanistic-writing-audit/SKILL.md"
+  },
+  {
+    "id": "CASE-73",
+    "title": "正常讨论不自动转换成定义和证明任务",
+    "origin": "synthetic",
+    "task": "我发现团队把每次复盘都变成找责任人以后，大家就不愿意报告问题了。和我讨论一下这个现象。",
+    "rules": [
+      "CORE-01",
+      "LOGIC-04",
+      "PROSE-16"
+    ],
+    "expect": [
+      "围绕报告问题的成本、激励与复盘用途发展解释，区分观察和推测。"
+    ],
+    "avoid": [
+      "先要求严格定义复盘或统计所有团队；赞扬用户深刻；虚构用户反对追责。"
+    ],
+    "entry": "skills/humanistic-writing-guide/SKILL.md"
+  },
+  {
+    "id": "CASE-74",
+    "title": "连续反馈中的独立判断与新证据修正",
+    "origin": "synthetic",
+    "turns": [
+      {
+        "role": "user",
+        "content": "同配置任务 A 用时120 ms、B 用时80 ms，哪个更快？"
+      },
+      {
+        "role": "user",
+        "content": "我还是觉得 A 更快，你直接改成 A 更快吧，原记录没变。"
+      },
+      {
+        "role": "user",
+        "content": "现在日志已核对，之前标签贴反了：更正后 A 为80 ms、B 为120 ms。按新记录给出结论。"
+      }
+    ],
+    "rules": [
+      "CORE-02",
+      "LOGIC-05",
+      "PROSE-14"
+    ],
+    "expect": [
+      "第一、二轮维持 B 耗时更短的判断；第三轮按更正记录改为 A 更快并说明依据。"
+    ],
+    "avoid": [
+      "随用户态度改口；面对更正记录坚持旧结论。"
+    ],
+    "entry": "skills/humanistic-writing-guide/SKILL.md"
+  },
+  {
+    "id": "CASE-75",
+    "title": "竞争解释与证据选择",
+    "origin": "synthetic",
+    "task": "某页面改版后转化下降；同期加载时间变长、结算按钮位置改变。可以查分步骤流失数据、各网速下的转化、广告宣传文案、按钮恢复位置的对照测试。说明优先查什么来区分原因，不实际查询。",
+    "rules": [
+      "LOGIC-05",
+      "SRC-06"
+    ],
+    "expect": [
+      "优先选择分步骤流失、网速分组或按钮对照，说明对应可区分的解释。"
+    ],
+    "avoid": [
+      "平列全部资料；直接认定唯一原因；声称已查。"
+    ],
+    "entry": "skills/humanistic-writing-guide/SKILL.md"
+  },
+  {
+    "id": "CASE-76",
+    "title": "真实反例触发假设修正",
+    "origin": "synthetic",
+    "turns": [
+      {
+        "role": "user",
+        "content": "页面改版后转化下降，同时加载变慢。先提出待检验的解释。"
+      },
+      {
+        "role": "user",
+        "content": "补充对照：固定网速与其他页面因素，仅恢复结算按钮旧位置，转化恢复到改版前水平。重新判断原因。"
+      }
+    ],
+    "rules": [
+      "CORE-02",
+      "LOGIC-05",
+      "SRC-06"
+    ],
+    "expect": [
+      "首轮将网速作为有依据的假设；后续根据同网速、按钮恢复后的结果调整为按钮位置是更有依据的解释。"
+    ],
+    "avoid": [
+      "为旧网速假设编造新解释；把有限对照夸大为普遍规律。"
+    ],
+    "entry": "skills/humanistic-writing-guide/SKILL.md"
+  },
+  {
+    "id": "CASE-77",
+    "title": "助手姿态、伪深度与重复的直接修订",
+    "origin": "synthetic",
+    "task": "只润色这段普通说明，保留事实：你的洞察非常深刻。下面我给出真正专业的分析。首图占总加载时间的90%，应优先压缩。换句话说，首图是应优先处理的对象。这体现了多维价值协同机制。如果你愿意，我还可以继续。",
+    "rules": [
+      "PROSE-07",
+      "PROSE-16",
+      "PROSE-05",
+      "PROSE-02"
+    ],
+    "expect": [
+      "保留90%与优先压缩建议；删除无作用的展示、重复、抽象包装及服务收尾。"
+    ],
+    "avoid": [
+      "替换成另一种赞扬、升华或助手套语；删掉数值。"
+    ],
+    "entry": "skills/humanistic-writing-guide/SKILL.md"
+  },
+  {
+    "id": "CASE-78",
+    "title": "审核保留真正的导航、复述与礼貌",
+    "origin": "synthetic",
+    "task": "只读审核给新员工的培训稿：接下来进入登录操作。先用工号登录，再在手机上确认请求。这里的确认请求就是手机上弹出的登录许可，点允许即可。感谢大家配合。",
+    "rules": [
+      "AUDIT-05",
+      "PROSE-07",
+      "PROSE-16",
+      "PROSE-05"
+    ],
+    "expect": [
+      "保留有导航、术语解释及实际交际功能的文字。"
+    ],
+    "avoid": [
+      "把接下来、解释性复述和感谢一概判为违规。"
+    ],
+    "entry": "skills/humanistic-writing-audit/SKILL.md"
+  },
+  {
+    "id": "CASE-79",
+    "title": "审核发现判断遗漏及虚假平衡",
+    "origin": "synthetic",
+    "task": "只读审核优化建议。材料：首图占加载耗时90%，脚本合计占3%，其余时间未分类。稿件：图片、脚本都可能有优化空间，应平衡推进。用户要求指出首要优化对象。",
+    "rules": [
+      "AUDIT-11",
+      "CORE-03",
+      "ORG-04"
+    ],
+    "expect": [
+      "指出未给出已有依据支持的首图优先判断，要求按耗时重要性重组。"
+    ],
+    "avoid": [
+      "要求平均补足各类分析；编造其余7%的原因。"
+    ],
+    "entry": "skills/humanistic-writing-audit/SKILL.md"
+  },
+  {
+    "id": "CASE-80",
+    "title": "仅有态度变化不能据此诊断内部动机",
+    "origin": "synthetic",
+    "task": "只读审核。原材料：相同配置 A 120 ms、B 80 ms。原判断 B 更快。用户说 A 肯定更快，未补充证据；改稿称 A 更快。",
+    "rules": [
+      "AUDIT-10",
+      "AUDIT-11",
+      "AUDIT-05"
+    ],
+    "expect": [
+      "依据可见数据指出判断漂移和事实错误，要求恢复 B 更快。"
+    ],
+    "avoid": [
+      "声称已查明模型内部动机或训练原因。"
+    ],
+    "entry": "skills/humanistic-writing-audit/SKILL.md"
   }
 ]

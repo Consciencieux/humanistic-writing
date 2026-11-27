@@ -44,14 +44,33 @@ class PackageTests(unittest.TestCase):
                 package.check_entry(skill / "SKILL.md", package.NAMES[kind])
                 package.check_links(skill)
                 self.assertTrue((skill / "shared/core.md").is_file())
+                entry_text = (skill / "SKILL.md").read_text(encoding="utf-8")
+                self.assertIn("### CORE-01", entry_text)
+                self.assertIn("### CTX-01", entry_text)
+                self.assertNotIn("### CTX-04", entry_text)
+                self.assertNotIn("<!-- EMBED:", entry_text)
                 self.assertTrue((skill / "scripts/text_stats.py").is_file())
                 self.assertFalse((skill / "evals").exists())
                 self.assertEqual(len(list(skill.rglob("SKILL.md"))), 1)
                 self.assertFalse((skill / "shared/methods").exists())
                 registry = rules.collect(skill)
+                # Shared generation rules must survive every packaging mode.
+                for ident in ("PROSE-02", "PROSE-05", "PROSE-07", "PROSE-13",
+                              "PROSE-14", "PROSE-16", "SRC-06", "LOGIC-03"):
+                    self.assertIn(ident, registry)
+                self.assertIn("禁止人为降低或提高结论强度", entry_text)
+                for ident in ("AUDIT-10", "AUDIT-11"):
+                    if kind == "guide":
+                        self.assertNotIn(ident, registry)
+                    else:
+                        self.assertIn(ident, registry)
                 if kind == "combined":
                     self.assertTrue((skill / "roles/guide.md").is_file())
-                    self.assertFalse((skill / "roles/guide.md").read_text(encoding="utf-8").startswith("---"))
+                    guide_role = (skill / "roles/guide.md").read_text(encoding="utf-8")
+                    audit_role = (skill / "roles/audit.md").read_text(encoding="utf-8")
+                    self.assertFalse(guide_role.startswith("---"))
+                    self.assertNotIn("<!-- EMBED:", guide_role)
+                    self.assertNotIn("<!-- EMBED:", audit_role)
                     self.assertEqual(registry["EDIT-02"].path, "roles/guide/revise.md")
                     self.assertEqual(registry["AUDIT-03"].path, "roles/audit/prohibitions.md")
                     self.assertEqual(set(registry), set(rules.collect(ROOT)))
@@ -87,6 +106,15 @@ class PackageTests(unittest.TestCase):
         self.assertIn("[core](shared/core.md)", result)
         self.assertIn("`[literal](../../shared/core.md)`", result)
         self.assertIn("[example](../../shared/core.md)", result)
+
+    def test_missing_embed_marker_stops_validation(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary) / "repo"
+            shutil.copytree(ROOT, root, ignore=shutil.ignore_patterns("dist", "__pycache__", ".git"))
+            entry = root / "SKILL.md"
+            entry.write_text(entry.read_text(encoding="utf-8").replace("<!-- EMBED:CORE -->", ""), encoding="utf-8")
+            with self.assertRaisesRegex(package.RepositoryError, "missing embed marker"):
+                package.check_source(root)
 
     def test_missing_resource_stops_validation(self):
         with tempfile.TemporaryDirectory() as temporary:

@@ -6,19 +6,23 @@ license: MIT
 
 # Audit：语义审核与改动判定
 
-检查文本实际完成了什么，以及修改改变了什么。对确认违反禁令的行为明确要求修复；无违规的有效表达保留。普通非虚构文本中确认的表演性口语、装饰性幽默、金句、假互动、装饰性引号和标题钩子，按 AUDIT-06 直接判定违规，不建议更换同义文案。
+检查文本实际完成了什么，以及修改改变了什么。对确认违反禁令的行为明确要求修复，不建议更换同义文案；无违规的有效表达保留。
 
 ## 启动
 
-完整读取[决策契约](../../shared/core.md)、[加载协议](../../shared/protocols/context.md)、[审核方法](references/review.md)和[治理禁令](references/prohibitions.md)。使用当前请求、实际稿件及必要上下文作为判断依据。
+确认[决策契约](../../shared/core.md)与[加载协议](../../shared/protocols/context.md)，并完整读取[审核方法](references/review.md)和[治理禁令](references/prohibitions.md)。使用当前请求、实际稿件及必要上下文作为判断依据。
+
+<!-- EMBED:CORE -->
+
+<!-- EMBED:CTX -->
 
 | 审查对象 | 读取的标准 |
 | --- | --- |
 | 内容是否形成、必要细节是否丢失 | [内容](../../shared/standards/content.md) |
-| 文章主标题、小标题与目录 | [组织](../../shared/standards/organization.md)，按 AUDIT-08 核对内容命名与全部标题禁令 |
-| 篇章职责、顺序、重复或长度 | [组织](../../shared/standards/organization.md) |
+| 文章主标题、小标题与目录 | [标题](../../shared/standards/titles.md)，按 AUDIT-08 核对内容命名与全部标题禁令 |
+| 篇章职责、顺序、开头结尾或长度 | [组织](../../shared/standards/organization.md)，结尾对照 AUDIT-09 |
 | 句段表达、语言痕迹与实际功能 | [语言](../../shared/standards/prose.md) |
-| 理由、因果、比较或结论强度 | [推理](../../shared/standards/reasoning.md) |
+| 理由、因果、比较、虚构前提或结论强度 | [推理](../../shared/standards/reasoning.md)，按 AUDIT-10、AUDIT-11 核对判断与任务 |
 | 作者立场、人物声音或语域 | [声音](../../shared/standards/voice.md) |
 | 事实、引文或来源支持 | [来源](../../shared/standards/sources.md) |
 | 文件、版本差异、计数或成品 | [工具](../../shared/tooling/capabilities.md) |

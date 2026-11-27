@@ -52,4 +52,4 @@ See [architecture](docs/architecture.md), [behavioral evaluation](evals/README.m
 
 ## Titles and section headings
 
-Use the Guide's [heading method](skills/humanistic-writing-guide/references/headings.md) to name the actual subject or relationship, and the shared [heading standard](shared/standards/organization.md#org-06) and [prohibitions](shared/standards/organization.md#org-08) to review the result. Article titles and section headings have distinct scopes. Chinese heading-length ranges are editing cues, not quality scores or automatic failure thresholds. A heading-only request preserves the body text.
+Use the Guide's [heading method](skills/humanistic-writing-guide/references/headings.md) to name the actual subject or relationship, and the shared [heading standard](shared/standards/titles.md#org-06) and [prohibitions](shared/standards/titles.md#org-08) to review the result. Article titles and section headings have distinct scopes. Chinese heading-length ranges are editing cues, not quality scores or automatic failure thresholds. A heading-only request preserves the body text.
