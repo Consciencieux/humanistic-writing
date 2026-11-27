@@ -54,6 +54,16 @@ class PackageTests(unittest.TestCase):
                 self.assertEqual(len(list(skill.rglob("SKILL.md"))), 1)
                 self.assertFalse((skill / "shared/methods").exists())
                 registry = rules.collect(skill)
+                # Shared generation rules must survive every packaging mode.
+                for ident in ("PROSE-13", "PROSE-14", "PROSE-15", "PROSE-16",
+                              "PROSE-17", "PROSE-18", "SRC-06", "LOGIC-03"):
+                    self.assertIn(ident, registry)
+                self.assertIn("禁止人为降低或提高结论强度", entry_text)
+                for ident in ("AUDIT-10", "AUDIT-11", "AUDIT-12"):
+                    if kind == "guide":
+                        self.assertNotIn(ident, registry)
+                    else:
+                        self.assertIn(ident, registry)
                 if kind == "combined":
                     self.assertTrue((skill / "roles/guide.md").is_file())
                     guide_role = (skill / "roles/guide.md").read_text(encoding="utf-8")

@@ -11,10 +11,10 @@
 | 角度、素材、细节、解释中间层与数据意义 | [内容](standards/content.md) | CONTENT-01～CONTENT-07 |
 | 先后关系、段落职责、开头结尾与篇幅 | [组织](standards/organization.md) | ORG-01～ORG-05、ORG-07 |
 | 文章主标题、小标题与 14 项标题禁令 | [标题](standards/titles.md) | ORG-06、ORG-08 |
-| 成文与语言审核、直接禁止表演性表达 | [语言](standards/prose.md) | PROSE-01～PROSE-12 |
+| 成文与语言审核、直接禁止表演性表达 | [语言](standards/prose.md) | PROSE-01～PROSE-18 |
 | 依据、因果、比较、结论与求解程度 | [推理](standards/reasoning.md) | LOGIC-01～LOGIC-05 |
 | 作者、人物、视角、口头与正式语域 | [声音](standards/voice.md) | VOICE-01～VOICE-07 |
-| 材料范围、事实、引用与来源关系 | [来源](standards/sources.md) | SRC-01～SRC-05 |
+| 材料范围、事实、引用与来源关系 | [来源](standards/sources.md) | SRC-01～SRC-06 |
 | 读取、研究、统计与定位编辑 | [工具](tooling/capabilities.md) | TOOL-01～TOOL-04 |
 | 完整读取、当前稿、恢复与交接 | [上下文](protocols/context.md) | CTX-01～CTX-04 |
 

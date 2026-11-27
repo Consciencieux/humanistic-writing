@@ -6,7 +6,7 @@
 
 | 所有者 | 负责什么 | 使用者 |
 | --- | --- | --- |
-| `shared/core.md` | 任务目标、内容先行、取舍、授权、停止条件 | 所有入口及操作 |
+| `shared/core.md` | 任务目标、独立判断、内容先行、取舍、授权、停止条件 | 所有入口及操作 |
 | Guide `compose.md` | 从材料形成内容，再完成语言表达 | 创作与续写 |
 | Guide `explain.md` | 解释中间层、术语、数据与篇幅深度的正面方法 | 解释、论述与信息展开 |
 | Guide `registers.md` | 口头、正式、学术与个人声音的正面方法 | 语域与读者转换 |
@@ -15,7 +15,7 @@
 | Guide `revise.md` | 原稿基线、编辑选择、替换应用、效果核对 | 编辑与重写 |
 | Guide `transform.md` | 新用途决定保留与转换的内容 | 翻译、摘要与整理 |
 | Audit `review.md` | 材料覆盖、语义判定、诊断与交接 | 审查与版本比较 |
-| Audit `prohibitions.md` | 根因治理、表演性表达、标题包装与内容缺口的禁止条件及裁决 | Audit |
+| Audit `prohibitions.md` | 根因治理、判断失真、任务异化、直接语言禁令、标题包装与内容缺口的裁决 | Audit |
 | `shared/standards/` | 内容、组织、标题（`titles.md`）、语言、推理、声音和来源的唯一权威定义 | 两个角色按需使用 |
 | `shared/protocols/context.md` | 读取、版本更新、恢复与工作状态 | 所有入口 |
 | `shared/tooling/capabilities.md` | 宿主读取、定位编辑、差异和产物操作 | 使用工具的任务 |
